@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.hero{
+   width: 100%;
+   min-height: 100vh;
+   background: #eceaff;
+   color: #525252;
+}
+.user-pic{
+    width: 100px;
+    clip-path: circle();
+}
+.logo{
+    width: 100px;
+}
+nav{
+   background: #1a1a1a;
+   width: 100%;
+   padding: 10px 10%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
