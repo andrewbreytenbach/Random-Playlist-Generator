@@ -19,7 +19,7 @@
 }
 .logo{
     width: 70px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 nav{
    background: #1a1a1a;
@@ -109,4 +109,14 @@ border: solid;
     grid-template-columns: repeat(2, auto);
     margin: 20px 0;
     gap: 20px;
+}
+.music-search-container h2{
+    font-weight: 500;
+    margin:auto;
+}
+#hide{
+    display: none;
+}
+#visible{
+    display: visible;
 }
