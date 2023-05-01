@@ -43,3 +43,4 @@ This repo is distributed under an MIT license. Click the MIT file in the reposit
 * [https://expressjs.com/] (Express Documentation)
 * [https://sequelize.org/master/] (Sequelize Documentation)
 * [https://www.npmjs.com/] (NPM Documentation)
+* [https://github.com/jordantwells42/vibesition] (Vibesition)
