@@ -11,7 +11,6 @@ The backend server defines API routes for handling the various requests made by 
 * HTML
 * CSS
 * JavaScript
-* React
 * Express
 * Node.js
 * mysql
@@ -41,7 +40,6 @@ This repo is distributed under an MIT license. Click the MIT file in the reposit
 * [https://github.com/username4] (Emily Miles)
 
 ## Acknowledgments
-* [https://reactjs.org/docs/getting-started.html] (React Documentation)
 * [https://expressjs.com/] (Express Documentation)
 * [https://sequelize.org/master/] (Sequelize Documentation)
 * [https://www.npmjs.com/] (NPM Documentation)
