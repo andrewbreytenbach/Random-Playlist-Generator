@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
+// Set up API routes for generating a playlist
+app.post('/api/generatePlaylist', playlistController.generatePlaylist);
+
+
 // Set up API routes
 app.get('/api/songs', (req, res) => {
     db.Song.findAll({}).then((dbSongs) => {
