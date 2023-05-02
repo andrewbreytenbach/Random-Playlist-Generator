@@ -153,3 +153,23 @@ border: solid;
     background: #ccc;
     margin: 15px 0 10px;
 }
+@media only screen and (max-width: 450px) {
+    .music-search-container{
+      height: 400px;
+      width: 300px;
+    }
+  
+    .signup-container {
+      height: 400px;
+      width: 300px;
+    }
+  
+    .login-container {
+      height:400px;
+      width: 300px;
+    }
+  
+    
+
+  
+  }
