@@ -1,4 +1,6 @@
-let dropDownMenu= document.getElementById("sub-menu");
-dropDownMenu.addEventListener("click", function(e) {
-    document.getElementById("hide").setAttribute("id", "visible");
-  });
+let toggleMenu=document.getElementById("sub-menu");
+console.log(toggleMenu);
+function togglefunction(){
+  toggleMenu.classList.toggle("sub-menu-opened");
+}
+console.log('test');
