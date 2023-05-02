@@ -5,10 +5,13 @@
     box-sizing: border-box;
 
 }
+body{
+    background: #eceaff;
+}
 .hero{
    width: 100%;
    min-height: 100vh;
-   background: #eceaff;
+   
    color: #525252;
 }
 .user-pic{
