@@ -104,7 +104,7 @@ border: solid;
 #artist, #genre, #decade, #year{
     cursor: pointer;
 }
-.filter-wrapper{
+.filter-wrapper, .login-wrapper, .signup-wrapper{
     display:grid;
     grid-template-columns: repeat(2, auto);
     margin: 20px 0;
@@ -119,4 +119,34 @@ border: solid;
 }
 #visible{
     display: visible;
+}
+.login-container, .signup-container{
+    background-color: white;
+padding: 3.1em 1.8em; 
+width: 80%;
+max-width: 37.5em;
+margin: 0 auto;
+border: solid;
+}
+.login-container h2{
+    font-weight: 500;
+    margin:auto;
+}
+.signup-container h2{
+    font-weight: 500;
+    margin:auto;
+}
+.login-container hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.signup-container hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
 }
