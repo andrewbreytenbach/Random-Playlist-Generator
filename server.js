@@ -20,18 +20,18 @@ app.get('/', (req, res) => {
 
 // Set up API routes
 app.get('/api/songs', (req, res) => {
-  // Placeholder response
-  const songs = [
-    { id: 1, title: 'Song 1', artist: 'Artist 1', year: 2000, genre: 'Rock' },
-    { id: 2, title: 'Song 2', artist: 'Artist 2', year: 2005, genre: 'Pop' },
-    { id: 3, title: 'Song 3', artist: 'Artist 3', year: 2010, genre: 'Hip-hop' },
-  ];
-  res.json(songs);
+    db.Song.findAll({}).then((dbSongs) => {
+        res.json(dbSongs);
+    });
 });
 
 // Start the server
-db.sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server listening on PORT ${PORT}`);
+db.sequelize.sync({ force: true })
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server listening on PORT ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error('Error synchronizing Sequelize models with database:', err);
   });
-});
