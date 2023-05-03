@@ -29,26 +29,45 @@ const sess = {
   })
 };
 
+
+// Set up session middleware
 app.use(session(sess));
 
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+// Set up static file serving and body parsing
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Set up routes
 app.use(routes);
 
-
-// Set up API routes
-app.get('/api/songs', (req, res) => {
-    db.Song.findAll({}).then((dbSongs) => {
-        res.json(dbSongs);
-    });
-
+// Start the server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
-  })
+  app.listen(PORT, () => {
+    console.log(`Server listening on PORT ${PORT}`);
+  });
+});
+
+
+// Inform Express.js on which template engine to use
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+// Set up static file serving and body parsing
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Set up routes
+app.use(routes);
+
+// Start the server
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server listening on PORT ${PORT}`);
+  });
 });
