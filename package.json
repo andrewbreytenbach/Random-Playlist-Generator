@@ -1,0 +1,23 @@
+{
+  "name": "random-playlist-generator",
+  "version": "1.0.0",
+  "description": "## About The Project This is a web application that allows users to generate a random playlist of songs based on various filters such as their likes, the year, genre, and duration of the playlist. The app uses HTML, CSS, and JavaScript on the frontend, with React as the frontend framework. On the backend, it uses Express, Node.js, mysql, and Sequelize, following the MVC architecture pattern.",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}

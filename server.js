@@ -4,6 +4,10 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const db = require('./models');
 
+//setting up handlebars
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({});
+
 // Set up Express app
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,6 +21,22 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
+
+//defining routes
+const loginRoutes = require('./api/loginRoutes');
+const signupRoutes = require('./api/signupRoutes');
+
+app.use('/', loginRoutes);
+app.use('/', signupRoutes);
+
+//Render auth template that consists of login and signup
+app.get('/auth', (req, res) => {
+  res.render('auth');
+});
+
+//set up default engine
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 // Set up API routes
 app.get('/api/songs', (req, res) => {
