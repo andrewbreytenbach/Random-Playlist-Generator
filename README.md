@@ -30,17 +30,18 @@ To generate a playlist, the user selects their preferences such as the genre, ar
 IMAGE 2
 
 ## License
-This repo is distributed under an MIT license. Click the MIT file in the repository to see what this entails.
+
 
 ## Contact
-* [https://github.com/username1] (Andrew Breytenbach)
-* [https://github.com/username2] (Jon Parker)
-* [https://github.com/username3] (Taja Grayson)
-* [https://github.com/username4] (Kriti Shrestha)
-* [https://github.com/username4] (Emily Miles)
+* [https://github.com/andrewbreytenbach] (Andrew Breytenbach)
+* [https://github.com/jonparker1221] (Jon Parker)
+* [https://github.com/graysont3] (Taja Grayson)
+* [https://github.com/KritiShrestha] (Kriti Shrestha)
+* [https://github.com/emiles55] (Emily Miles)
 
 ## Acknowledgments
 * [https://expressjs.com/] (Express Documentation)
 * [https://sequelize.org/master/] (Sequelize Documentation)
 * [https://www.npmjs.com/] (NPM Documentation)
 * [https://github.com/jordantwells42/vibesition] (Vibesition)
+* [https://developer.spotify.com/] (Spotify API)

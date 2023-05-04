@@ -1,0 +1,99 @@
+[
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "year": 1975,
+      "genre": "Rock"
+    },
+    {
+      "title": "Thriller",
+      "artist": "Michael Jackson",
+      "year": 1982,
+      "genre": "Pop"
+    },
+    {
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "year": 1983,
+      "genre": "Pop"
+    },
+    {
+      "title": "Livin' On A Prayer",
+      "artist": "Bon Jovi",
+      "year": 1986,
+      "genre": "Rock"
+    },
+    {
+      "title": "Like a Rolling Stone",
+      "artist": "Bob Dylan",
+      "year": 1965,
+      "genre": "Rock"
+    },
+    {
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "year": 1971,
+      "genre": "Rock"
+    },
+    {
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "year": 1991,
+      "genre": "Grunge"
+    },
+    {
+      "title": "Hallelujah",
+      "artist": "Jeff Buckley",
+      "year": 1994,
+      "genre": "Rock"
+    },
+    {
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "year": 2002,
+      "genre": "Hip hop"
+    },
+    {
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "year": 1976,
+      "genre": "Rock"
+    },
+    {
+      "title": "Despacito",
+      "artist": "Luis Fonsi ft. Daddy Yankee",
+      "year": 2017,
+      "genre": "Reggaeton"
+    },
+    {
+      "title": "Sorry",
+      "artist": "Justin Bieber",
+      "year": 2015,
+      "genre": "Pop"
+    },
+    {
+      "title": "Hello",
+      "artist": "Adele",
+      "year": 2015,
+      "genre": "Pop"
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "year": 2014,
+      "genre": "Funk"
+    },
+    {
+      "title": "We Found Love",
+      "artist": "Rihanna ft. Calvin Harris",
+      "year": 2011,
+      "genre": "Pop"
+    },
+    {
+      "title": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "year": 1967,
+      "genre": "Rock"
+    }
+    ]
+

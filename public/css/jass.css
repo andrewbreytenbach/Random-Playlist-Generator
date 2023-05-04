@@ -52,8 +52,11 @@ nav ul li a{
     top: 100%;
     right: 10%;
     width: 320px;
-    max-height: 400px;
+    max-height: 0px;
     overflow:hidden;
+}
+.sub-menu-opened{
+    max-height: 350px;
 }
 .sub-menu{
     background: #fff;
@@ -153,3 +156,23 @@ border: solid;
     background: #ccc;
     margin: 15px 0 10px;
 }
+@media only screen and (max-width: 450px) {
+    .music-search-container{
+      height: 400px;
+      width: 300px;
+    }
+  
+    .signup-container {
+      height: 400px;
+      width: 300px;
+    }
+  
+    .login-container {
+      height:400px;
+      width: 300px;
+    }
+  
+    
+
+  
+  }
