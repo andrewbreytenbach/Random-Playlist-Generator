@@ -23,20 +23,36 @@ const withAuth = require('../utils/auth');
 // });
 
 router.get('/', (req, res) => {
-  // If a session exists, redirect the request to the homepage
+ // If a session exists, redirect the request to the homepage
   if (req.session.logged_in) {
-    res.redirect('/dashboard');
+   res.redirect('/dashboard');
     return;
-  }
+   }
 
   res.render('login');
 });
 
-router.get('/dashboard', (req, res) => {
-  // If a session exists, redirect the request to the homepage
+// router.get('/dashboard', (req, res) => {
+//   // If a session exists, redirect the request to the homepage
  
 
-  res.render('dashboard');
-});
+//   res.render('dashboard');
+// });
+// router.post('/login', async (req, res) => {
+//   try {
+//     // Authenticate the user
+//     const user = await User.authenticate(req.body.email, req.body.password);
+    
+//     // Set the user ID in the session
+//     req.session.userId = user.id;
+
+//     // Redirect to the navbar page
+//     res.redirect('/navbar');
+//   } catch (error) {
+//     // Handle authentication errors
+//     res.render('login', { error: error.message });
+//   }
+// });
+
 
 module.exports = router;
