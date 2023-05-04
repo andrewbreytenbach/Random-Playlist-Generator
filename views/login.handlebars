@@ -1,41 +1,37 @@
-<div>
-    <div>
-    <h2>Login to your account</h2>
-    <a href="/dashboard">go to profile</a>
-</div>
-<form>
-    <div>
-<label for="email-address">E-mail</label>
-    <input type="text" id="email-address"/>
-    </div>
-    <div>
-        <label for="password-login">password</label>
-        <input type="password" id="password"/>
-    </div>
-     <div>
-        <button type="submit">Login</button>
-      </div>
-</form>
-</div>
-<div>
-  <div>
-    <h2>Create an account</h2>
+<div class="login-container">
+  <h2>Login</h2>
+  <hr>
+  <div class="login-wrapper">
+    <div id="email">Email:</div>
+    <input type="text" id="email-input" placeholder="Please enter your email">
   </div>
-  <form>
-    <div>
-      <label for="email-signup">Email</label>
-      <input type="text" id="email-signup" />
+  <div class="login-wrapper">
+    <div id="password">Password:
+
+    </div><input type="text" id="password-input" placeholder="Please enter your password">
+  </div>
+  <div>
+      <button type="submit">Login</button>
     </div>
-    <div>
-      <label for="password-signup">Password</label>
-      <input type="password" id="password-signup" />
+</div>
+
+<div class="signup-container">
+  <h2>Sign Up</h2>
+  <hr>
+  <div class="signup-wrapper">
+    <div id="name">Name:</div>
+    <input type="text" id="name-input" placeholder="Please enter your name">
+  </div>
+  <div class="signup-wrapper">
+    <div id="email">Email:</div>
+    <input type="text" id="signupemail-input" placeholder="Please enter your email">
+  </div>
+  <div class="signup-wrapper">
+    <div id="signuppassword">Password:
+
+    </div><input type="text" id="signuppassword-input" placeholder="Please enter your password">
+  </div>
+  <div>
+      <button type="submit">Sign up</button>
     </div>
-    <div>
-      <label for="confirm-password-signup">Confirm Password</label>
-      <input type="password" id="confirm-password-signup" />
-    </div>
-    <div>
-      <button type="submit">Signup</button>
-    </div>
-  </form>
 </div>
