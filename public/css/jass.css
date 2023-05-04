@@ -128,11 +128,12 @@ border: solid;
 }
 .login-container, .signup-container{
     background-color: white;
-padding: 3.1em 1.8em; 
+
 width: 80%;
 max-width: 37.5em;
-margin: 0 auto;
+margin: 90px;
 border: solid;
+display: inline-block;
 }
 .login-container h2{
     font-weight: 500;
@@ -156,6 +157,17 @@ border: solid;
     background: #ccc;
     margin: 15px 0 10px;
 }
+.signup-container{
+    padding: 3.1em 1.8em; 
+    
+}
+.login-container{
+    padding-top: 85px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 30px;
+}
 @media only screen and (max-width: 450px) {
     .music-search-container{
       height: 400px;
@@ -172,7 +184,8 @@ border: solid;
       width: 300px;
     }
   
-    
+
 
   
   }
+
