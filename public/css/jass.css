@@ -115,6 +115,7 @@ border: solid;
     grid-template-columns: repeat(2, auto);
     margin: 20px 0;
     gap: 20px;
+    padding: 10px;
 }
 .music-search-container h2{
     font-weight: 500;
