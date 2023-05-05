@@ -115,10 +115,12 @@ border: solid;
     grid-template-columns: repeat(2, auto);
     margin: 20px 0;
     gap: 20px;
+    padding: 10px;
 }
 .music-search-container h2{
     font-weight: 500;
     margin:auto;
+    text-align: center;
 }
 #hide{
     display: none;
@@ -134,14 +136,17 @@ max-width: 37.5em;
 margin: 90px;
 border: solid;
 display: inline-block;
+
 }
 .login-container h2{
     font-weight: 500;
+    text-align: center;
     margin:auto;
 }
 .signup-container h2{
     font-weight: 500;
     margin:auto;
+    text-align: center;
 }
 .login-container hr{
     border: 0;
