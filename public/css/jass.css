@@ -173,6 +173,20 @@ display: inline-block;
     padding-right: 20px;
     margin-left: 30px;
 }
+#genre, #decade, #year, #artist, #number{
+    width:170px;
+    height:20px;
+    
+}
+#email-input, #password-input, #name-input, #signupemail-input, #signuppassword-input{
+    width: 250px;
+}
+#email-input{
+    margin-left: 25px;
+}
+#name-input, #signupemail-input{
+    margin-left: 25px;
+}
 @media only screen and (max-width: 450px) {
     .music-search-container{
       height: 400px;
