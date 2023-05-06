@@ -29,8 +29,12 @@ router.get('/', (req, res) => {
     return;
    }
 
-  res.render('login');
+  res.render('login-signup');
 });
+
+router.get("/search", (req, res) => {
+  res.render("search")
+})
 
 // router.get('/dashboard', (req, res) => {
 //   // If a session exists, redirect the request to the homepage
