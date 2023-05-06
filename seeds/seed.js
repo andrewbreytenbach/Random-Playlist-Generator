@@ -6,6 +6,9 @@ const songData = require('./songData.json');
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
+  await Song.bulkCreate(songData)
+  console.log("Songs has been seeded!")
+
   process.exit(0);
 };
 

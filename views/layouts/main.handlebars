@@ -2,24 +2,48 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Playlist Generator</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/SavePlay.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Playlist Generator</title>
+    <link rel="stylesheet" href="\css\jass.css">
 </head>
 
 <body>
-  {{#if logged_in}}
-  {{{body}}}
-  {{else}}
-  {{> navbar}}
-  <h2>Welcome, {{name}}!</h2>
-  {{> searchbox}}
-  {{/if}}
+    <div class="hero">
+        <nav>
+            <img src="\images\musiclogo.jfif" class="logo">
+            <h1>Random Music Generator</h1>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/search">Search</a></li>
+                <li><a href="./SavedPlaylist.html">Saved Playlists</a></li>
+            </ul>
+            <img src="\images\sample profile pic.jpg" class="user-pic" onclick="togglefunction()">
+            <div class="sub-menu-wrap" id="sub-menu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="sample profile pic.jpg">
+                        <h2>John Doe</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-  <script type="text/javascript" src="/js/javascript.js"></script>
+    {{{body}}}
+    
+    <script type="text/javascript" src="javascript.js"></script>
 </body>
 
 </html>
