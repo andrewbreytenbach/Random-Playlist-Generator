@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="login-container">
+    <h2>Login</h2>
+    <hr>
+    {{#if error}}
+    <div class="error" role="alert">
+      {{error}}
+    </div>
+    {{/if}}
+    <form action="/login" method="POST">
+      <div class="login-wrapper">
+        <div id="email">Email:</div>
+        <input type="text" id="email-input" name="email" placeholder="Please enter your email">
+      </div>
+      <div class="login-wrapper">
+        <div id="password">Password:</div>
+        <input type="password" id="password-input" name="password" placeholder="Please enter your password">
+      </div>
+      <div>
+        <button type="submit" class="login-form">Login</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="signup-container">
+    <!-- Display any validation errors -->
+    {{#if errors}}
+    <div class="error" role="alert">
+      {{#each errors}}
+      <p>{{this}}</p>
+      {{/each}}
+    </div>
+    {{/if}}
+    <h2>Sign Up</h2>
+    <hr>
+    <form action="/signup" method="POST">
+      <div class="signup-wrapper">
+        <div id="name">Name:</div>
+        <input type="text" id="name-input" name="name" placeholder="Please enter your name">
+      </div>
+      <div class="signup-wrapper">
+        <div id="email">Email:</div>
+        <input type="text" id="email-input" name="email" placeholder="Please enter your email">
+      </div>
+      <div class="signup-wrapper">
+        <div id="signuppassword">Password:</div>
+        <input type="password" id="password-input" name="password" placeholder="Please enter your password">
+      </div>
+      <div>
+        <button type="submit" class="signup-form">Sign up</button>
+      </div>
+    </form>
+  </div>
+</div>

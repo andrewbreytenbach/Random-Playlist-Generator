@@ -34,8 +34,15 @@ const sess = {
 app.use(session(sess));
 
 // Inform Express.js on which template engine to use
-app.engine('handlebars', hbs.engine);
+// Set the view engine
+app.engine('handlebars', exphbs({
+  defaultLayout: 'main',
+  layoutsDir: path.join(__dirname, 'views/layouts'),
+  partialsDir: path.join(__dirname, 'views/partials'),
+  extname: 'handlebars',
+}));
 app.set('view engine', 'handlebars');
+
 
 // Set up static file serving and body parsing
 app.use(express.json());
