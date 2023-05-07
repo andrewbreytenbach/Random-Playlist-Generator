@@ -22,20 +22,36 @@ class User extends Model {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: 'Please enter your name.'
+          }
+        }
       },
       email: {
         type: DataTypes.STRING,
         allowNull: false,
         unique: true,
         validate: {
-          isEmail: true,
-        },
+          isEmail: {
+            msg: 'Please enter a valid email address.'
+          },
+          notEmpty: {
+            msg: 'Please enter your email address.'
+          }
+        }
       },
       password: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [8],
+          len: {
+            args: [8],
+            msg: 'Password must be at least 8 characters long.'
+          },
+          notEmpty: {
+            msg: 'Please enter a password.'
+          }
         },
       },
     },

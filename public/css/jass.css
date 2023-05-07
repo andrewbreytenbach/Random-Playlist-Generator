@@ -1,210 +1,261 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 
 }
-body{
+.error{
+    color: red;
+}
+
+body {
     background: #eceaff;
 }
-.hero{
-   width: 100%;
-   min-height: 100vh;
-   
-   color: #525252;
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+
+    color: #525252;
 }
-.user-pic{
+
+.user-pic {
     width: 40px;
     clip-path: circle();
     cursor: pointer;
 
 }
-.logo{
+
+.logo {
     width: 70px;
     margin-left: 10px;
 }
-nav{
-   background: #1a1a1a;
-   width: 100%;
-   padding: 10px 10%;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   position: relative;
-   
+
+nav {
+    background: #1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
 }
-nav ul{
+
+nav ul {
     width: 100%;
     text-align: right;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
 }
-.sub-menu-wrap{
+
+.sub-menu-wrap {
     position: absolute;
     top: 100%;
     right: 10%;
     width: 320px;
     max-height: 0px;
-    overflow:hidden;
+    overflow: hidden;
 }
-.sub-menu-opened{
+
+.sub-menu-opened {
     max-height: 350px;
 }
-.sub-menu{
+
+.sub-menu {
     background: #fff;
     padding: 20px;
     margin: 10px;
 }
-.user-info{
+
+.user-info {
     display: flex;
     align-items: center;
 }
-.user-info h2{
+
+.user-info h2 {
     font-weight: 500;
 }
-.user-info img{
+
+.user-info img {
     width: 60px;
     clip-path: circle();
     margin-right: 15px;
 }
-.sub-menu hr{
+
+.sub-menu hr {
     border: 0;
     height: 1px;
     width: 100%;
     background: #ccc;
     margin: 15px 0 10px;
 }
-.sub-menu-link{
+
+.sub-menu-link {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #525252;
     margin: 12px 0;
 }
-.sub-menu-link p{
+
+.sub-menu-link p {
     width: 100%;
 }
-.sub-menu-link span{
+
+.sub-menu-link span {
     font-size: 22px;
 }
-.music-search-container{
-background-color: white;
-padding: 3.1em 1.8em; 
-width: 80%;
-max-width: 37.5em;
-margin: 0 auto;
-position: absolute;
-transform: translate(-50%, -50%);
-top: 50%;
-left: 50%;
-border: solid;
+
+.music-search-container {
+    background-color: white;
+    padding: 3.1em 1.8em;
+    width: 80%;
+    max-width: 37.5em;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: solid;
 }
-#artist, #genre, #decade, #year{
+
+#artist,
+#genre,
+#decade,
+#year {
     cursor: pointer;
 }
-.filter-wrapper, .login-wrapper, .signup-wrapper{
-    display:grid;
+
+.filter-wrapper,
+.login-wrapper,
+.signup-wrapper {
+    display: grid;
     grid-template-columns: repeat(2, auto);
     margin: 20px 0;
     gap: 20px;
     padding: 10px;
 }
-.music-search-container h2{
+
+.music-search-container h2 {
     font-weight: 500;
-    margin:auto;
+    margin: auto;
     text-align: center;
 }
-#hide{
+
+#hide {
     display: none;
 }
-#visible{
+
+#visible {
     display: visible;
 }
-.login-container, .signup-container{
-    background-color: white;
 
-width: 80%;
-max-width: 37.5em;
-margin: 90px;
-border: solid;
-display: inline-block;
+
+.login-container {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    padding: 20px;
+    margin: 50px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+.signup-container {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    padding: 20px;
+    margin: 50px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+.login-wrapper,
+.signup-wrapper {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#email,
+#password,
+#name,
+#signuppassword {
+    width: 100px;
+}
+
+#genre,
+#decade,
+#year,
+#artist,
+#number {
+    width: 170px;
+    height: 20px;
 
 }
-.login-container h2{
-    font-weight: 500;
-    text-align: center;
-    margin:auto;
+
+#email-input,
+#password-input,
+#name-input,
+#signuppassword-input {
+    flex: 1;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
-.signup-container h2{
-    font-weight: 500;
-    margin:auto;
-    text-align: center;
+
+button.login-form,
+button.signup-form {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
-.login-container hr{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #ccc;
-    margin: 15px 0 10px;
+
+button.login-form:hover,
+button.signup-form:hover {
+    background-color: #3e8e41;
 }
-.signup-container hr{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #ccc;
-    margin: 15px 0 10px;
-}
-.signup-container{
-    padding: 3.1em 1.8em; 
-    
-}
-.login-container{
-    padding-top: 85px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 30px;
-}
-#genre, #decade, #year, #artist, #number{
-    width:170px;
-    height:20px;
-    
-}
-#email-input, #password-input, #name-input, #signupemail-input, #signuppassword-input{
-    width: 250px;
-}
-#email-input{
-    margin-left: 25px;
-}
-#name-input, #signupemail-input{
-    margin-left: 25px;
-}
+
 @media only screen and (max-width: 450px) {
-    .music-search-container{
-      height: 400px;
-      width: 300px;
+    .music-search-container {
+        height: 400px;
+        width: 300px;
     }
-  
+
     .signup-container {
-      height: 400px;
-      width: 300px;
+        height: 400px;
+        width: 300px;
     }
-  
+
     .login-container {
-      height:400px;
-      width: 300px;
+        height: 400px;
+        width: 300px;
     }
-  
 
 
-  
-  }
 
+
+}
