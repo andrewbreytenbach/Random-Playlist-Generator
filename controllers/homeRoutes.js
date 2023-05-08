@@ -120,5 +120,20 @@ router.get('/logout', (req, res) => {
   res.redirect('/login');
 });
 
+// Define route for about
+router.get('/about', (req, res) => {
+  // Render the about view using res.render() function
+  if (req.session.logged_in) {
+    res.render('about', {
+      title: 'About',
+      logged_in: true
+    });
+  } else {
+    res.render('partials/login', {
+      title: 'Login'
+    });
+  }
+});
+
 
 module.exports = router;
