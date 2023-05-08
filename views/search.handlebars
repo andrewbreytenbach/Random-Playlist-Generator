@@ -26,13 +26,22 @@
     </div>
 
 
-    <div class="hero">
+<div class="hero">
+  <h3>Results</h3>
+  <ul id="results">
+    {{#each playlist}}
+    <li>
+      <p>{{this.title}} by {{this.artist}}</p>
+      <audio id="player-{{@index}}" class="player" data-song="{{this.audioSrc}}">
+        <source src="{{this.url}}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <button class="play-btn" data-player-id="{{@index}}">Play</button>
+      <button class="pause-btn" data-player-id="{{@index}}">Pause</button>
+    </li>
+    {{/each}}
+  </ul>
+</div>
 
-        <h3>Results</h3>
-
-        <ul id="results">
-            
-        </ul>
-    </div>
-
-    <script src="\js\search.js"> --}}
+<script src="\js\search.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>

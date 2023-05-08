@@ -35,6 +35,10 @@ Song.init(
             type: DataTypes.INTEGER,
             // allowNull: false
           },
+          url: {
+            type: DataTypes.STRING,
+            allowNull: false
+        }
     },
     {//Freezing the table so that sequalize prevents it from renaming
         sequelize,
