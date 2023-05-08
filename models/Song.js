@@ -1,6 +1,10 @@
+//Importing Model and datatypes
 const { Model, DataTypes } = require('sequelize');
+
+//Importing sequelize instance from connection.js
 const sequelize = require('../config/connection');
 
+//Defining the Song class which extends from the Model class
 class Song extends Model {};
 
 Song.init(
@@ -36,7 +40,7 @@ Song.init(
             allowNull: false
         }
     },
-    {
+    {//Freezing the table so that sequalize prevents it from renaming
         sequelize,
         timestamps: false,
         freezeTableName: true,
@@ -44,5 +48,5 @@ Song.init(
         modelName: 'song',  
     }
 )
-
+//Exporting the Song model
 module.exports = Song;
