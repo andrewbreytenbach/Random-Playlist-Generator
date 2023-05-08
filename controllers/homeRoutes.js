@@ -8,48 +8,30 @@ const withAuth = require('../utils/auth');
 const bcrypt = require('bcrypt');
 
 // Define a GET route for the root path '/'
-router.get('/', (req, res) => {
-  // If a session exists, redirect the request to the dashboard
-  if (req.session.logged_in) {
-    res.render('dashboard', {
-      title: 'Dashboard',
-      logged_in: req.session.logged_in
-    });
-  } else {
-    // If a session doesn't exist, render the login form
-    res.render('partials/login', {
-      title: 'Login',
-      logged_in: false
-    });
-  }
+router.get('/', withAuth, (req, res) => {
+  res.render('dashboard', {
+    title: 'Dashboard',
+    logged_in: req.session.logged_in
+  });
 });
 
 
 // Define route for /dashboard path
-router.get('/dashboard', (req, res) => {
-  //Check if a user is logged in by checking if a session exists
-  if (req.session.logged_in) {
-    res.render('dashboard', {
-      title: 'Dashboard',
-      logged_in: true
-    });
-  } else {
-    // If a session doesn't exist, render the login form
-    res.render('partials/login', {
-      title: 'Login'
-    });
-  }
+router.get('/dashboard', withAuth, (req, res) => {
+  res.render('dashboard', {
+    title: 'Dashboard',
+    logged_in: req.session.logged_in
+  });
 });
 
 //Get route for login path
 router.get('/login', (req, res) => {
   if (req.session.logged_in) {
     //if the session exists user will be directed to dashboard
-    res.redirect('/dashboard', { title: 'Dashboard' });
-  } else {
-    //else user will be directed to to the login handlebar where they have to login or sign up
-    res.render('partials/login', { title: 'Login' });
+    res.redirect('/');
+    return;
   }
+  res.render('partials/login', { title: 'Login' });
 });
 
 //Get route for signup path
@@ -134,18 +116,19 @@ router.get('/logout', (req, res) => {
 });
 
 // Define route for about navigation
-router.get('/about', (req, res) => {
-  // Render the about view using res.render() function
-  if (req.session.logged_in) {
-    res.render('about', {
-      title: 'About',
-      logged_in: true
-    });
-  } else {
-    res.render('partials/login', {
-      title: 'Login'
-    });
-  }
+router.get('/about', withAuth, (req, res) => {
+  res.render('about', {
+    title: 'About',
+    logged_in: req.session.logged_in
+  });
+});
+
+// Define route for about navigation
+router.get('/savedPlaylist', withAuth, (req, res) => {
+  res.render('savedPlaylist', {
+    title: 'Saved Playlist',
+    logged_in: req.session.logged_in
+  });
 });
 
 
