@@ -32,8 +32,19 @@ function displayPlaylist(playlist) {
   playlistElement.innerHTML = '';
   for (const song of playlist) {
     const li = document.createElement('li');
-    li.textContent = `${song.name} by ${song.artist}`;
+    li.innerHTML = `${song.name} by ${song.artist} <button class="play-button">Play</button>`;
     playlistElement.appendChild(li);
+    
+    // Load the audio file using Howler.js
+    const sound = new Howl({
+      src: [song.url],
+    });
+    
+    // Set up a click listener on the Play button to play the audio
+    const playButton = li.querySelector('.play-button');
+    playButton.addEventListener('click', () => {
+      sound.play();
+    });
   }
-}  
+}
 
