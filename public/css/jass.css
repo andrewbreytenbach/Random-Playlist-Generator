@@ -10,7 +10,7 @@
 }
 
 body {
-    background: #eceaff;
+    background: #d6b4fc;
 }
 
 .hero {
@@ -56,7 +56,8 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    
+    text-underline-position: under;
 }
 
 .sub-menu-wrap {
@@ -125,7 +126,7 @@ nav ul li a {
     margin: 0 auto;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 60%;
+    top: 80%;
     left: 50%;
     
     border-radius: 10px;
@@ -135,9 +136,12 @@ nav ul li a {
 #artist,
 #genre,
 #decade,
-#year {
+#year, #number {
     cursor: pointer;
     font-size: 20px;
+}
+#artist:hover, #genre:hover, #decade:hover, #year:hover, #number:hover{
+    background-color: rgb(211,211,211);
 }
 
 .filter-wrapper,
@@ -250,6 +254,7 @@ button.signup-form:hover {
     font-size: 40px;
     
 }
+
 
 @media only screen and (max-width: 450px) {
     .music-search-container {
