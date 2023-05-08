@@ -5,6 +5,16 @@
     box-sizing: border-box;
 
 }
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 42px;
+    color: #0c5099;
+    font-size: 36px;
+    text-align: center;
+
+}
 .error{
     color: red;
 }
@@ -237,6 +247,26 @@ button.signup-form {
 button.login-form:hover,
 button.signup-form:hover {
     background-color: #3e8e41;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60vh;
+}
+
+.about-container h1 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.about-container p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 800px;
 }
 
 @media only screen and (max-width: 450px) {
