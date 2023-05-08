@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Amatic SC;
     box-sizing: border-box;
 
 }
@@ -125,10 +125,11 @@ nav ul li a {
     margin: 0 auto;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 60%;
     left: 50%;
-    border: solid;
-    border-radius: 10%;
+    
+    border-radius: 10px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.7), 15px 15px 15px rgba(0, 0, 0, 0.7);
 }
 
 #artist,
@@ -136,6 +137,7 @@ nav ul li a {
 #decade,
 #year {
     cursor: pointer;
+    font-size: 20px;
 }
 
 .filter-wrapper,
@@ -149,7 +151,7 @@ nav ul li a {
 }
 
 .music-search-container h2 {
-    font-weight: 500;
+    font-size: 50px;
     margin: auto;
     text-align: center;
 }
@@ -171,7 +173,7 @@ nav ul li a {
     margin: 50px;
     background: linear-gradient(135deg, #f403d1, #64b5f6);
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.7), 15px 15px 15px rgba(0, 0, 0, 0.7);
     vertical-align: top;
 }
 
@@ -183,7 +185,7 @@ nav ul li a {
     margin: 50px;
     background: linear-gradient(135deg, #f403d1, #64b5f6);
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.7), 15px 15px 15px rgba(0, 0, 0, 0.7);
     vertical-align: top;
 }
 
@@ -207,7 +209,8 @@ nav ul li a {
 #artist,
 #number {
     width: 170px;
-    height: 20px;
+    height: 50px;
+    border-radius: 10px;
 
 }
 
@@ -238,6 +241,14 @@ button.signup-form {
 button.login-form:hover,
 button.signup-form:hover {
     background-color: #3e8e41;
+}
+#input-one, #input-two, #input-three, #input-four, #input-five{
+    text-align: center;
+    font-size: 20px;
+}
+.login-container h2, .signup-container h2{
+    font-size: 40px;
+    
 }
 
 @media only screen and (max-width: 450px) {
