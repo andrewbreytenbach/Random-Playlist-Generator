@@ -18,9 +18,11 @@ router.get('/', withAuth, (req, res) => {
 
 // Define route for /dashboard path
 router.get('/dashboard', withAuth, (req, res) => {
+  const username = req.session.username;
   res.render('dashboard', {
     title: 'Dashboard',
-    logged_in: req.session.logged_in
+    logged_in: req.session.logged_in,
+    username : username
   });
 });
 
@@ -104,6 +106,7 @@ router.post('/login', async (req, res) => {
   req.session.logged_in = true;
   //The id of the authenticated user in the database is stored in the user_id session variable so that it can be used to identify the user for subsequent requests.
   req.session.user_id = user.id;
+  req.session.username = user.name;
 
   res.redirect('/dashboard');
 });

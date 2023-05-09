@@ -1,4 +1,4 @@
-<!-- This file is part of the View. It handles UI/UX concerns (layout and display)-->
+<!-- This file is part of the View. It handles UI (layout and display)-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +14,8 @@
 <body>
   {{#if logged_in}}
     {{> navbar}}
+    {{{ user_id }}}
+    {{ userName }}
     <div class="container">
       {{{ body }}}
     </div>
