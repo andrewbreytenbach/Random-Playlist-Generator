@@ -10,7 +10,7 @@ h1 {
     font-size: 36px;
     text-align: center;
     margin-top: 42px;
-    color: #0c5099;
+    color: purple;
     font-size: 36px;
     text-align: center;
 
@@ -19,7 +19,7 @@ h1 {
 .username{
  
     position: absolute;
-    top: 172px;
+    top: 120px;
     color: purple;
     font-size: 29px;
     font-weight: bolder;
@@ -28,7 +28,7 @@ h1 {
       
 
 .error{
-    color: red;
+    color: white;
 }
 
 body {
@@ -147,12 +147,26 @@ nav ul li a {
     margin: 0 auto;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 51%;
     left: 25%;
     
     border-radius: 10px;
     box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.7), 15px 15px 15px rgba(0, 0, 0, 0.7);
 }
+
+.music-results-container {
+    background: linear-gradient(135deg, #f403d1, #64b5f6);
+    padding: 3.1em 1.8em;
+    max-width: 37.5em;
+    margin: 0 auto;
+    /* position: absolute; */
+    top: 50%;
+    float: right;
+    
+    border-radius: 10px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.7), 15px 15px 15px rgba(0, 0, 0, 0.7);
+}
+
 
 #artist,
 #genre,
