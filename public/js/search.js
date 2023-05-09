@@ -8,13 +8,6 @@ function searchByArtist () {
     .then(data => {
         console.log(data)
 
-        // <li>
-        //     <h4>Title</h4>
-        //     <h5>Artist</h5>
-        //     <h6>Genre</h6>
-        //     <h6>Year</h6>
-        // </li>
-
         const resultsEl = document.getElementById("results");
 
         resultsEl.innerHTML = "";
@@ -73,7 +66,27 @@ function searchByGenre () {
             }
         })
     }
-
+    function displayPlaylist(playlist) {
+        const playlistElement = document.getElementById('playlist');
+        playlistElement.innerHTML = '';
+        for (const song of playlist) {
+          const li = document.createElement('li');
+          li.innerHTML = `${song.name} by ${song.artist} <button class="play-button">Play</button>`;
+          playlistElement.appendChild(li);
+          
+          // Load the audio file using Howler.js
+          const sound = new Howl({
+            src: [song.url],
+          });
+          
+          // Set up a click listener on the Play button to play the audio
+          const playButton = li.querySelector('.play-button');
+          playButton.addEventListener('click', () => {
+            sound.play();
+          });
+        }
+      }
+      
 
 artistBtn.addEventListener("click", searchByArtist);
 genreBtn.addEventListener("click", searchByGenre);

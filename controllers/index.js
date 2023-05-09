@@ -8,12 +8,12 @@ const apiRoutes = require('./api');
 // Importing the homeRoutes module from the current directory.
 const homeRoutes = require('./homeRoutes');
 
-// Mounting the homeRoutes module to the root path '/'. This middleware function is called for all HTTP methods.
+// Mounting the homeRoutes module to the root path '/'. np,m
 router.use('/', homeRoutes);
 
 
 router.use('/api', apiRoutes);
-// Mounting the apiRoutes module to the '/api' path. This line is commented out.
+// Mounting the apiRoutes module to the '/api' path. 
 
 
 // Exporting the router object to be used by the app.js file.

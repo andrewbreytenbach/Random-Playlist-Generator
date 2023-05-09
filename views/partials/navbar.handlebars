@@ -7,20 +7,16 @@
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/savedPlaylist">Saved Playlists</a></li>
+            {{!-- <li><a href="/savedPlaylist">Saved Playlists</a></li> --}}
         </ul>
         <img src="/images/sample profile pic.jpg" class="user-pic" onclick="togglefunction()">
         <div class="sub-menu-wrap" id="sub-menu">
             <div class="sub-menu">
                 <div class="user-info">
-                    <img src="sample profile pic.jpg">
-                    <h2>John Doe</h2>
+                    <img src="/images/sample profile pic.jpg">
+                    {{!-- <h2>{{}}</h2> --}}
                 </div>
                 <hr>
-                <a href="#" class="sub-menu-link">
-                    <p>Edit Profile</p>
-                    <span>></span>
-                </a>
                 <a href="/logout" class="sub-menu-link">
                     <p>Logout</p>
                     <span>></span>

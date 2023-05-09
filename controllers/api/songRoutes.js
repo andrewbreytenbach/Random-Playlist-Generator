@@ -1,8 +1,6 @@
 const router = require("express").Router();
 const {Song} = require("../../models")
 
-// --> /api/songs/
-
 
 // get all songs
 router.get("/", (req, res) => {
@@ -11,7 +9,6 @@ router.get("/", (req, res) => {
         res.json(results)
     })
 })
-console.log("!!!!!!");
 
 // get songs by artist
 router.get("/artist/:name", (req, res) => {
