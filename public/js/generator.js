@@ -48,3 +48,17 @@ function displayPlaylist(playlist) {
   }
 }
 
+// const savedData = localStorage.getItem("savedPlaylist");
+// let savedPlaylist = [];
+// if (savedData !== null) {
+//   savedPlaylist = JSON.parse(savedData);
+// }
+
+// function createSearchList(array) {
+//   $("#saved-playlist").empty();
+//   for (let i = 0; i < array.length; i++) {
+//     if (i < 5) {
+//       $("#saved-playlist").append(`<div class="card">${array[i]}</div>`);
+//     }
+//   }
+// }

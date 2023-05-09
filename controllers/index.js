@@ -2,7 +2,7 @@
 // Importing the Router class from the Express.js framework to define routes.
 const router = require('express').Router();
 
-// const apiRoutes = require('./api');
+const apiRoutes = require('./api');
 // Importing the API routes module from the current directory. This line is commented out.
 
 // Importing the homeRoutes module from the current directory.
@@ -12,7 +12,7 @@ const homeRoutes = require('./homeRoutes');
 router.use('/', homeRoutes);
 
 
-// router.use('/api', apiRoutes);
+router.use('/api', apiRoutes);
 // Mounting the apiRoutes module to the '/api' path. This line is commented out.
 
 

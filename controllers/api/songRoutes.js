@@ -11,6 +11,7 @@ router.get("/", (req, res) => {
         res.json(results)
     })
 })
+console.log("!!!!!!");
 
 // get songs by artist
 router.get("/artist/:name", (req, res) => {
