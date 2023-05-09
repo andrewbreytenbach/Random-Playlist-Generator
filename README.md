@@ -25,7 +25,7 @@ To get a local copy up and running, clone this repository to your local machine 
 IMAGE 1
 
 ## Usage
-To generate a playlist, the user selects their preferences such as the genre, artist, year, and number of songs. The app then generates a playlist based on these criteria and displays it to the user. The user can then choose to save the playlist or generate a new one. The songs will also be playable immediately on the page.
+To generate a playlist, the user selects their preferences such as the genre, artist. The app then generates a playlist based on these criteria and displays it to the user. The user can then choose to save the playlist or generate a new one. The songs will also be playable immediately on the page.
 
 IMAGE 2
 

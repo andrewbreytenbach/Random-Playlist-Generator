@@ -1,29 +1,28 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 
-}
-body{
+} */
+/* body{
     background: #eceaff;
-}
-.hero{
+} */
+/* .hero{
    width: 100%;
-   /* min-height: 100vh; */
    color: #525252;
-}
-.user-pic{
+} */
+/* .user-pic{
     width: 40px;
     clip-path: circle();
     cursor: pointer;
 
-}
-.logo{
+} */
+/* .logo{
     width: 70px;
     margin-left: 10px;
-}
-nav{
+} */
+/* nav{
    background: #1a1a1a;
    width: 100%;
    padding: 10px 10%;
@@ -45,7 +44,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-}
+} */
 /* .sub-menu-wrap{
     position: absolute;
     top: 100%;
@@ -60,7 +59,7 @@ nav ul li a{
     margin: 10px; */
 
 
-.card{
+/* .card{
     padding: 20px;
 
-}
+} */
