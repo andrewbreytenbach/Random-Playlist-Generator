@@ -10,6 +10,9 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3005;
 
+// Serve static files from the public directory
+app.use(express.static('public'));
+
 // Set up Handlebars.js engine with custom helpers
 // const hbs = exphbs.create({ helpers });
 

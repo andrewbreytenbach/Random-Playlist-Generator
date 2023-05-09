@@ -5,111 +5,112 @@
       "year": 1975,
       "genre": "Rock",
       "url": "audio-files/bohemian-rhapsody.mp3"
-    },
+    }, 
     {
       "title": "Thriller",
       "artist": "Michael Jackson",
       "year": 1982,
       "genre": "Pop",
-      "url": "audio-files/thriller.mp3"
+      "url": "/public/audiofiles/thriller.mp3"
     },
     {
       "title": "Billie Jean",
       "artist": "Michael Jackson",
       "year": 1983,
       "genre": "Pop",
-      "url": "audio-files/billie-jean.mp3"
+      "url": "/public/audiofiles/billie-jean.mp3"
     },
     {
       "title": "Livin' On A Prayer",
       "artist": "Bon Jovi",
       "year": 1986,
       "genre": "Rock",
-      "url": "audio-files/live-on-a-prayer.mp3"
+      "url": "/public/audiofiles/live-on-a-prayer.mp3"
     },
     {
       "title": "Like a Rolling Stone",
       "artist": "Bob Dylan",
       "year": 1965,
       "genre": "Rock",
-      "url": "audio-files/like-a-rolling-stone.mp3"
+      "url": "/public/audiofiles/like-a-rolling-stone.mp3"
     },
     {
       "title": "Stairway to Heaven",
       "artist": "Led Zeppelin",
       "year": 1971,
       "genre": "Rock",
-      "url": "audio-files/stairway-to-heaven.mp3"
+      "url": "/public/audiofiles/stairway-to-heaven.mp3"
     },
     {
       "title": "Smells Like Teen Spirit",
       "artist": "Nirvana",
       "year": 1991,
       "genre": "Grunge",
-      "url": "audio-files/smells-like-teen-spirit.mp3"
+      "url": "/public/audiofiles/smells-like-teen-spirit.mp3"
     },
     {
       "title": "Hallelujah",
       "artist": "Jeff Buckley",
       "year": 1994,
       "genre": "Rock",
-      "url": "audio-files/hallelujah.mp3"
+      "url": "/public/audiofiles/hallelujah.mp3"
     },
     {
       "title": "Lose Yourself",
       "artist": "Eminem",
       "year": 2002,
       "genre": "Hip hop",
-      "url": "audio-files/lose-yourself.mp3"
+      "url": "/public/audiofiles/lose-yourself.mp3"
     },
     {
       "title": "Hotel California",
       "artist": "Eagles",
       "year": 1976,
       "genre": "Rock",
-      "url": "audio-files/hotel-california.mp3"
+      "url": "/public/audiofiles/hotel-california.mp3"
     },
     {
       "title": "Despacito",
       "artist": "Luis Fonsi ft. Daddy Yankee",
       "year": 2017,
       "genre": "Reggaeton",
-      "url": "audio-files/despacito.mp3"
+      "url": "/public/audiofiles/despacito.mp3"
     },
     {
       "title": "Sorry",
       "artist": "Justin Bieber",
       "year": 2015,
       "genre": "Pop",
-      "url": "audio-files/sorry.mp3"
+      "url": "/public/audiofiles/sorry.mp3"
     },
     {
       "title": "Hello",
       "artist": "Adele",
       "year": 2015,
       "genre": "Pop",
-      "url": "audio-files/hello.mp3"
+      "url": "/public/audiofiles/hello.mp3"
     },
     {
       "title": "Uptown Funk",
       "artist": "Mark Ronson ft. Bruno Mars",
       "year": 2014,
       "genre": "Funk",
-      "url": "audio-files/uptown-funk.mp3"
+      "url": "/public/audiofiles/uptown-funk.mp3"
     },
     {
       "title": "We Found Love",
       "artist": "Rihanna ft. Calvin Harris",
       "year": 2011,
       "genre": "Pop",
-      "url": "audio-files/we-found-live.mp3"
+      "url": "/public/audiofiles/we-found-live.mp3"
     },
     {
       "title": "Purple Haze",
       "artist": "Jimi Hendrix",
       "year": 1967,
       "genre": "Rock",
-      "url": "audio-files/purple-haze.mp3"
+      "url": "/public/audiofiles/purple-haze.mp3"
     }
+    
     ]
 

@@ -14,79 +14,84 @@ function searchByArtist () {
 
         for(i = 0; i < data.length; i++) {
             const newLi = document.createElement("li");
-
+    
             const titleEl = document.createElement("h4");
             titleEl.textContent = data[i].title;
-
+    
             const artistEl = document.createElement("h5");
             artistEl.textContent = data[i].artist;
-
+    
             const genreEl = document.createElement("h6");
             genreEl.textContent = data[i].genre;
-            
+                  
             const yearEl = document.createElement("h6");
             yearEl.textContent = data[i].year;
-
-            newLi.append(titleEl, artistEl, genreEl, yearEl)
-
-            resultsEl.append(newLi)
-        }
-    })
-}
-
-function searchByGenre () {
-    const genreInput = document.getElementById("input-two").value
-    fetch("/api/songs/genre/" + genreInput)
-    .then(res => res.json())
-    .then(data => {
-            console.log(data)
+    
+            const audioEl = document.createElement("audio");
+            audioEl.setAttribute("id", "player-" + i);
+            audioEl.setAttribute("class", "player");
+            audioEl.setAttribute("data-song", data[i].audioSrc);
+            audioEl.setAttribute("controls", "");
             
-            const resultsEl = document.getElementById("results");
-
-            resultsEl.innerHTML = "";
-    
-            for(i = 0; i < data.length; i++) {
-                const newLi = document.createElement("li");
-    
-                const titleEl = document.createElement("h4");
-                titleEl.textContent = data[i].title;
-    
-                const artistEl = document.createElement("h5");
-                artistEl.textContent = data[i].artist;
-    
-                const genreEl = document.createElement("h6");
-                genreEl.textContent = data[i].genre;
-                
-                const yearEl = document.createElement("h6");
-                yearEl.textContent = data[i].year;
-    
-                newLi.append(titleEl, artistEl, genreEl, yearEl)
-    
-                resultsEl.append(newLi)
-            }
-        })
+            const sourceEl = document.createElement("source");
+            sourceEl.setAttribute("src", "./seeds/" + data[i].url);
+            sourceEl.setAttribute("type", "audio/mpeg");
+            audioEl.appendChild(sourceEl);
+            
+            newLi.append(titleEl, artistEl, genreEl, yearEl, audioEl);
+            
+            resultsEl.append(newLi);
+            
+          }
+        });
     }
-    function displayPlaylist(playlist) {
-        const playlistElement = document.getElementById('playlist');
-        playlistElement.innerHTML = '';
-        for (const song of playlist) {
-          const li = document.createElement('li');
-          li.innerHTML = `${song.name} by ${song.artist} <button class="play-button">Play</button>`;
-          playlistElement.appendChild(li);
-          
-          // Load the audio file using Howler.js
-          const sound = new Howl({
-            src: [song.url],
+
+    function searchByGenre () {
+        const genreInput = document.getElementById("input-two").value;
+      
+        fetch("/api/songs/genre/" + genreInput)
+          .then(res => res.json())
+          .then(data => {
+            console.log(data);
+      
+            const resultsEl = document.getElementById("results");
+      
+            resultsEl.innerHTML = "";
+      
+            for(i = 0; i < data.length; i++) {
+              const newLi = document.createElement("li");
+      
+              const titleEl = document.createElement("h4");
+              titleEl.textContent = data[i].title;
+      
+              const artistEl = document.createElement("h5");
+              artistEl.textContent = data[i].artist;
+      
+              const genreEl = document.createElement("h6");
+              genreEl.textContent = data[i].genre;
+                    
+              const yearEl = document.createElement("h6");
+              yearEl.textContent = data[i].year;
+      
+              const audioEl = document.createElement("audio");
+
+audioEl.setAttribute("id", "player-" + i);
+audioEl.setAttribute("class", "player");
+audioEl.setAttribute("data-song", data[i].audioSrc);
+audioEl.setAttribute("controls", "");
+
+const sourceEl = document.createElement("source");
+sourceEl.setAttribute("src", "./seeds/" + data[i].url);
+sourceEl.setAttribute("type", "audio/mpeg");
+audioEl.appendChild(sourceEl);
+
+newLi.append(titleEl, artistEl, genreEl, yearEl, audioEl);
+
+resultsEl.append(newLi);
+
+            }
           });
-          
-          // Set up a click listener on the Play button to play the audio
-          const playButton = li.querySelector('.play-button');
-          playButton.addEventListener('click', () => {
-            sound.play();
-          });
-        }
       }
       
-
 artistBtn.addEventListener("click", searchByArtist);
 genreBtn.addEventListener("click", searchByGenre);
