@@ -15,6 +15,18 @@ h1 {
     text-align: center;
 
 }
+
+.username{
+ 
+    position: absolute;
+    top: 172px;
+    color: purple;
+    font-size: 29px;
+    font-weight: bolder;
+    padding-left: 61px;
+      }
+      
+
 .error{
     color: red;
 }
@@ -26,7 +38,6 @@ body {
 .hero {
     width: 100%;
     min-height: 100vh;
-
     color: #525252;
 }
 
