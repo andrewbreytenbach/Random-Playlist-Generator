@@ -68,7 +68,7 @@ nav {
 
 nav ul {
     text-align: right;
-    margin-right: -13em;
+    margin-right: -5em;
 }
 
 nav ul li {
@@ -408,25 +408,3 @@ button.signup-form:hover {
         display: none;
     }
 }
-
-/* @media only screen and (max-width: 450px) {
-    .music-search-container {
-        height: 400px;
-        width: 300px;
-    }
-
-    .signup-container {
-        height: 400px;
-        width: 300px;
-    }
-
-    .login-container {
-        height: 400px;
-        width: 300px;
-    }
-
-    .music {
-        color: white;
-    }
-
-} */

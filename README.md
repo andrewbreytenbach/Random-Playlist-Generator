@@ -18,19 +18,18 @@ The backend server defines API routes for handling the various requests made by 
 * APIs
 
 ## Getting Started
-To access this project, visit the repository link.
+To access this project, visit the repository link: https://github.com/andrewbreytenbach/random-playlist-generator
 
-To get a local copy up and running, clone this repository to your local machine and run npm install to install the necessary dependencies. You will also need to set up a MySQL database and update the config.json file with your database credentials. Run npm run start to start the server and navigate to localhost:3000 to use the app.
+Heroku Deployment: https://new-random-playlist-generator.herokuapp.com/
 
-IMAGE 1
+To get a local copy up and running, clone this repository to your local machine and run npm install to install the necessary dependencies. You will also need to set up a MySQL database and update the config.json file with your database credentials. Run npm run start to start the server and navigate to your local port to use the app.
 
 ## Usage
 To generate a playlist, the user selects their preferences such as the genre, artist. The app then generates a playlist based on these criteria and displays it to the user. The user can then choose to save the playlist or generate a new one. The songs will also be playable immediately on the page.
 
-IMAGE 2
+Login Page Screenshot: ![](./public/images/login.png)
 
-## License
-
+Homepage Screenshot: ![](./public/images/homepage.png)
 
 ## Contact
 * [https://github.com/andrewbreytenbach] (Andrew Breytenbach)
